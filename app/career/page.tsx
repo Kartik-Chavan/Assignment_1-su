@@ -1,4 +1,4 @@
-import { MapPin, Clock, DollarSign, Users } from "lucide-react"
+import { MapPin, Clock, Users } from "lucide-react"
 
 export default function Career() {
   const positions = [
@@ -136,7 +136,6 @@ export default function Career() {
                         <span>{position.type}</span>
                       </div>
                       <div className="flex items-center space-x-1">
-                        <DollarSign className="w-4 h-4" />
                         <span>{position.salary}</span>
                       </div>
                     </div>
