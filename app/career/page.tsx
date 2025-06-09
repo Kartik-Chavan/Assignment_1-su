@@ -5,34 +5,34 @@ export default function Career() {
     {
       title: "Senior Full Stack Developer",
       department: "Engineering",
-      location: "Remote / San Francisco",
+      location: "Remote / Bangalore",
       type: "Full-time",
-      salary: "$120k - $160k",
+      salary: "₹12,00,000 - ₹16,00,000",
       description:
         "Join our engineering team to build scalable web applications using React, Node.js, and cloud technologies.",
     },
     {
       title: "AI/ML Engineer",
       department: "AI Research",
-      location: "Remote / New York",
+      location: "Remote / Mumbai",
       type: "Full-time",
-      salary: "$130k - $180k",
+      salary: "₹13,00,000 - ₹18,00,000",
       description: "Develop cutting-edge AI solutions and integrate machine learning models into production systems.",
     },
     {
       title: "Technical Training Specialist",
       department: "Education",
-      location: "Remote / Chicago",
+      location: "Remote / Delhi",
       type: "Full-time",
-      salary: "$80k - $110k",
+      salary: "₹8,00,000 - ₹11,00,000",
       description: "Create and deliver technical training programs for our professional development courses.",
     },
     {
       title: "DevOps Engineer",
       department: "Infrastructure",
-      location: "Remote / Austin",
+      location: "Remote / Hyderabad",
       type: "Full-time",
-      salary: "$110k - $140k",
+      salary: "₹11,00,000 - ₹14,00,000",
       description: "Manage cloud infrastructure, CI/CD pipelines, and ensure reliable deployment processes.",
     },
   ]
@@ -49,11 +49,11 @@ export default function Career() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-50 to-indigo-100 py-20">
+      <section className="bg-gradient-to-br from-purple-50 to-indigo-100 py-20 dark:from-purple-900/50 dark:to-indigo-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-slide-up">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Join Our Team</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Join Our Team</h1>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Be part of a dynamic team that's shaping the future of technology. We're looking for passionate
               individuals who want to make a real impact.
             </p>
@@ -62,31 +62,31 @@ export default function Career() {
       </section>
 
       {/* Culture Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Culture</h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Our Culture</h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 At TechFlow, we believe that great work comes from great people working together. Our culture is built
                 on collaboration, innovation, and continuous learning.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Innovation-driven environment</span>
+                  <span className="text-gray-700 dark:text-gray-300">Innovation-driven environment</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Work-life balance priority</span>
+                  <span className="text-gray-700 dark:text-gray-300">Work-life balance priority</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Continuous learning opportunities</span>
+                  <span className="text-gray-700 dark:text-gray-300">Continuous learning opportunities</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Diverse and inclusive workplace</span>
+                  <span className="text-gray-700 dark:text-gray-300">Diverse and inclusive workplace</span>
                 </li>
               </ul>
             </div>
@@ -106,23 +106,23 @@ export default function Career() {
       </section>
 
       {/* Open Positions */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Open Positions</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Open Positions</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Explore exciting opportunities to grow your career with us
             </p>
           </div>
 
           <div className="space-y-6">
             {positions.map((position, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-md p-6 animate-scale-hover">
+              <div key={index} className="bg-white dark:bg-gray-900 rounded-xl shadow-md p-6 animate-scale-hover">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{position.title}</h3>
-                    <p className="text-gray-600 mb-4">{position.description}</p>
-                    <div className="flex flex-wrap gap-4 text-sm text-gray-500">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{position.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">{position.description}</p>
+                    <div className="flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400">
                       <div className="flex items-center space-x-1">
                         <Users className="w-4 h-4" />
                         <span>{position.department}</span>
@@ -154,11 +154,11 @@ export default function Career() {
       </section>
 
       {/* Application Process */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Application Process</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Application Process</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Our streamlined hiring process is designed to be fair, efficient, and transparent
             </p>
           </div>
@@ -174,8 +174,8 @@ export default function Career() {
                 <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   {phase.step}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{phase.title}</h3>
-                <p className="text-gray-600">{phase.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{phase.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{phase.description}</p>
               </div>
             ))}
           </div>

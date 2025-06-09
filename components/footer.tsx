@@ -25,11 +25,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 98765 43210</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <MapPin className="w-4 h-4" />
-                <span>123 Tech Street, Innovation City, IC 12345</span>
+                <span>123 Tech Street, Bangalore, India 560001</span>
               </div>
             </div>
           </div>
